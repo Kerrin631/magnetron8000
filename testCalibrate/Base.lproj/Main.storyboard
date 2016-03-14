@@ -27,6 +27,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rectangle 1.png" translatesAutoresizingMaskIntoConstraints="NO" id="KEH-fb-n5l">
                                 <rect key="frame" x="49" y="189" width="276" height="135"/>
                                 <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="135" id="HyF-tj-60h"/>
                                     <constraint firstAttribute="height" constant="135" id="a6M-aa-xYU"/>
                                 </constraints>
                             </imageView>
@@ -40,6 +41,7 @@
                                 <rect key="frame" x="123" y="255" width="129" height="42"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="42" id="UoZ-UB-xMM"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="42" id="Xea-33-7uc"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Digital-7MonoItalic" family="Digital-7" pointSize="40"/>
                                 <color key="textColor" red="1" green="0.81467632307006765" blue="0.28802537189398492" alpha="1" colorSpace="calibratedRGB"/>
@@ -60,21 +62,32 @@
                                     <constraint firstAttribute="width" constant="151" id="zr4-Hl-IJi"/>
                                 </constraints>
                             </imageView>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="-100" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="K2i-mj-jR0">
+                                <rect key="frame" x="47" y="584" width="280" height="31"/>
+                                <color key="tintColor" red="1" green="0.79913514300326538" blue="0.27062549323392138" alpha="1" colorSpace="calibratedRGB"/>
+                            </slider>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="KEH-fb-n5l" firstAttribute="top" secondItem="KIx-aI-1so" secondAttribute="bottom" constant="-76" id="1Rd-aY-oWt"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="t1m-Xa-jEB" secondAttribute="bottom" constant="370" id="3yT-fo-1XT"/>
                             <constraint firstItem="mOi-a0-aGo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7x2-JA-e0d"/>
                             <constraint firstItem="t1m-Xa-jEB" firstAttribute="leading" secondItem="mOi-a0-aGo" secondAttribute="leading" id="BVq-Vy-BBh"/>
+                            <constraint firstItem="K2i-mj-jR0" firstAttribute="leading" secondItem="KEH-fb-n5l" secondAttribute="leading" id="Btn-sq-joo"/>
                             <constraint firstItem="mOi-a0-aGo" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="21" id="Bwe-XW-VmH"/>
                             <constraint firstItem="KEH-fb-n5l" firstAttribute="centerX" secondItem="KIx-aI-1so" secondAttribute="centerX" id="LFt-9F-lL6"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="f4X-x3-bTR" secondAttribute="bottom" constant="120" id="Mmc-iG-XYl"/>
+                            <constraint firstItem="t1m-Xa-jEB" firstAttribute="top" secondItem="KEH-fb-n5l" secondAttribute="bottom" constant="-69" id="O1M-l5-TFb"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="KIx-aI-1so" secondAttribute="bottom" constant="402" id="T75-PS-UEB"/>
                             <constraint firstItem="KEH-fb-n5l" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-77" id="U9w-tT-4tF"/>
+                            <constraint firstItem="K2i-mj-jR0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UK7-ct-lds"/>
                             <constraint firstItem="t1m-Xa-jEB" firstAttribute="trailing" secondItem="mOi-a0-aGo" secondAttribute="trailing" id="aac-Ne-6HA"/>
                             <constraint firstItem="KIx-aI-1so" firstAttribute="centerX" secondItem="t1m-Xa-jEB" secondAttribute="centerX" id="chW-ep-H8w"/>
                             <constraint firstItem="f4X-x3-bTR" firstAttribute="leading" secondItem="t1m-Xa-jEB" secondAttribute="leading" constant="-11" id="dsX-Ur-Ktt"/>
                             <constraint firstItem="f4X-x3-bTR" firstAttribute="top" secondItem="KEH-fb-n5l" secondAttribute="bottom" constant="74" id="fLj-en-pX0"/>
+                            <constraint firstItem="t1m-Xa-jEB" firstAttribute="top" secondItem="KIx-aI-1so" secondAttribute="bottom" constant="-10" id="ibw-qZ-Ubp"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="K2i-mj-jR0" secondAttribute="bottom" constant="53" id="p13-jW-uZ2"/>
+                            <constraint firstItem="K2i-mj-jR0" firstAttribute="top" secondItem="f4X-x3-bTR" secondAttribute="bottom" constant="37" id="rd9-Iv-mav"/>
                             <constraint firstItem="KEH-fb-n5l" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="33" id="tyH-Jx-Ps6"/>
                             <constraint firstItem="KIx-aI-1so" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="59" id="zKN-z6-IEI"/>
                         </constraints>
@@ -83,6 +96,7 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="background" destination="8bC-Xf-vdC" id="X2B-V0-uB1"/>
+                        <outlet property="calibrationSlider" destination="K2i-mj-jR0" id="ZJu-2B-QKM"/>
                         <outlet property="magZDisplay" destination="t1m-Xa-jEB" id="ah1-lk-RnF"/>
                     </connections>
                 </viewController>

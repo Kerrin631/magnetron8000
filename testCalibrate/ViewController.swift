@@ -35,6 +35,9 @@ class ViewController: UIViewController {
         return audioPlayer
     }
 
+    //slider
+    @IBOutlet weak var calibrationSlider: UISlider!
+    
     
     //Instance Variables
     
@@ -83,6 +86,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        print(calibrationSlider)
         
 //        currentMaxMagX = 0
 //        currentMaxMagY = 0
@@ -177,7 +181,13 @@ class ViewController: UIViewController {
 //            currentMaxMagZ = magneticField.z
 //        }
         
-        magZDisplay?.text = String(Int(fabs((magneticField.z))))
+        
+        var totalMagneticField = Int(fabs(magneticField.z)) + Int(calibrationSlider.value)
+        
+        
+        magZDisplay?.text = String(totalMagneticField)
+        
+        
         
         
         
@@ -185,23 +195,23 @@ class ViewController: UIViewController {
 //        maxMagY?.text = "\(currentMaxMagY).2f"
 //        maxMagZ?.text = "\(currentMaxMagZ).2f"
         
-        if fabs(magneticField.z) >= 510 && fabs(magneticField.z) < 600 {
+        if totalMagneticField >= 510 && totalMagneticField < 600 {
             background.backgroundColor = UIColor.greenColor()
             greenAudio!.volume = 0.3
             greenAudio?.play()
         }
-        else if fabs(magneticField.z) >= 600 && fabs(magneticField.z) < 800 {
+        else if totalMagneticField >= 600 && totalMagneticField < 800 {
             background.backgroundColor = UIColor.orangeColor()
             orangeAudio!.volume = 0.5
             orangeAudio?.play()
         }
         
-        else if fabs(magneticField.z) > 800 {
+        else if totalMagneticField > 800 {
             background.backgroundColor = UIColor.redColor()
             redAudio!.volume = 0.8
             redAudio?.play()
         }
-        else if fabs(magneticField.z) < 510 {
+        else if totalMagneticField < 510 {
             background.backgroundColor = UIColor.whiteColor()
             
         }
