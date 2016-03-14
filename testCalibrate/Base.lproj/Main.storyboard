@@ -1,25 +1,98 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="digital-7 (mono italic).ttf">
+            <string>Digital-7MonoItalic</string>
+            <string>Digital-7MonoItalic</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="testCalibrate" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rectangle 1.png" translatesAutoresizingMaskIntoConstraints="NO" id="KEH-fb-n5l">
+                                <rect key="frame" x="49" y="189" width="276" height="135"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="135" id="a6M-aa-xYU"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Magnetron 8000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mOi-a0-aGo">
+                                <rect key="frame" x="123" y="41" width="129" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t1m-Xa-jEB">
+                                <rect key="frame" x="123" y="255" width="129" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="UoZ-UB-xMM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Digital-7MonoItalic" family="Digital-7" pointSize="40"/>
+                                <color key="textColor" red="1" green="0.81467632307006765" blue="0.28802537189398492" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Magnetic Field" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KIx-aI-1so">
+                                <rect key="frame" x="75" y="198" width="225" height="67"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="67" id="h8a-oS-FLT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Digital-7MonoItalic" family="Digital-7" pointSize="27"/>
+                                <color key="textColor" red="0.99852035984848486" green="0.99852035984848486" blue="0.99852035984848486" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="magnet.png" translatesAutoresizingMaskIntoConstraints="NO" id="f4X-x3-bTR">
+                                <rect key="frame" x="112" y="398" width="151" height="149"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="151" id="zr4-Hl-IJi"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="t1m-Xa-jEB" secondAttribute="bottom" constant="370" id="3yT-fo-1XT"/>
+                            <constraint firstItem="mOi-a0-aGo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7x2-JA-e0d"/>
+                            <constraint firstItem="t1m-Xa-jEB" firstAttribute="leading" secondItem="mOi-a0-aGo" secondAttribute="leading" id="BVq-Vy-BBh"/>
+                            <constraint firstItem="mOi-a0-aGo" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="21" id="Bwe-XW-VmH"/>
+                            <constraint firstItem="KEH-fb-n5l" firstAttribute="centerX" secondItem="KIx-aI-1so" secondAttribute="centerX" id="LFt-9F-lL6"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="f4X-x3-bTR" secondAttribute="bottom" constant="120" id="Mmc-iG-XYl"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="KIx-aI-1so" secondAttribute="bottom" constant="402" id="T75-PS-UEB"/>
+                            <constraint firstItem="KEH-fb-n5l" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-77" id="U9w-tT-4tF"/>
+                            <constraint firstItem="t1m-Xa-jEB" firstAttribute="trailing" secondItem="mOi-a0-aGo" secondAttribute="trailing" id="aac-Ne-6HA"/>
+                            <constraint firstItem="KIx-aI-1so" firstAttribute="centerX" secondItem="t1m-Xa-jEB" secondAttribute="centerX" id="chW-ep-H8w"/>
+                            <constraint firstItem="f4X-x3-bTR" firstAttribute="leading" secondItem="t1m-Xa-jEB" secondAttribute="leading" constant="-11" id="dsX-Ur-Ktt"/>
+                            <constraint firstItem="f4X-x3-bTR" firstAttribute="top" secondItem="KEH-fb-n5l" secondAttribute="bottom" constant="74" id="fLj-en-pX0"/>
+                            <constraint firstItem="KEH-fb-n5l" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="33" id="tyH-Jx-Ps6"/>
+                            <constraint firstItem="KIx-aI-1so" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="59" id="zKN-z6-IEI"/>
+                        </constraints>
                     </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="background" destination="8bC-Xf-vdC" id="X2B-V0-uB1"/>
+                        <outlet property="magZDisplay" destination="t1m-Xa-jEB" id="ah1-lk-RnF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="374.5" y="249.5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Rectangle 1.png" width="657" height="316"/>
+        <image name="magnet.png" width="758" height="758"/>
+    </resources>
 </document>

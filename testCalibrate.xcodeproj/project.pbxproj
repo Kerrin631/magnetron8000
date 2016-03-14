@@ -14,6 +14,18 @@
 		E961A4371C937A60002FB4BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E961A4351C937A60002FB4BA /* LaunchScreen.storyboard */; };
 		E961A4421C937A60002FB4BA /* testCalibrateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E961A4411C937A60002FB4BA /* testCalibrateTests.swift */; };
 		E961A44D1C937A60002FB4BA /* testCalibrateUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E961A44C1C937A60002FB4BA /* testCalibrateUITests.swift */; };
+		E961A45F1C94D7AF002FB4BA /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E961A45E1C94D7AF002FB4BA /* AudioToolbox.framework */; };
+		E961A4611C94D7C3002FB4BA /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E961A4601C94D7C3002FB4BA /* CoreMotion.framework */; };
+		E961A4631C94D80D002FB4BA /* geigerGreen.wav in Resources */ = {isa = PBXBuildFile; fileRef = E961A4621C94D80D002FB4BA /* geigerGreen.wav */; };
+		E961A4671C94FA1F002FB4BA /* R2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E961A4661C94FA1F002FB4BA /* R2.mp3 */; };
+		E961A4691C94FC85002FB4BA /* geigerGreen.mov in Resources */ = {isa = PBXBuildFile; fileRef = E961A4681C94FC85002FB4BA /* geigerGreen.mov */; };
+		E961A46B1C94FD8A002FB4BA /* geigerGreen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E961A46A1C94FD8A002FB4BA /* geigerGreen.mp3 */; };
+		E961A46D1C94FE12002FB4BA /* geigerOrange.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E961A46C1C94FE12002FB4BA /* geigerOrange.mp3 */; };
+		E961A46F1C950411002FB4BA /* geigerRed.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E961A46E1C950411002FB4BA /* geigerRed.mp3 */; };
+		E961A4711C960EF6002FB4BA /* digital-7 (mono italic).ttf in Resources */ = {isa = PBXBuildFile; fileRef = E961A4701C960EF6002FB4BA /* digital-7 (mono italic).ttf */; };
+		E961A4731C961D62002FB4BA /* Rectangle 1.png in Resources */ = {isa = PBXBuildFile; fileRef = E961A4721C961D62002FB4BA /* Rectangle 1.png */; };
+		E961A4751C96288C002FB4BA /* magnet.png in Resources */ = {isa = PBXBuildFile; fileRef = E961A4741C96288C002FB4BA /* magnet.png */; };
+		E961A4851C963E27002FB4BA /* Rectangle 1 + magIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = E961A4841C963E27002FB4BA /* Rectangle 1 + magIcon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +59,18 @@
 		E961A4481C937A60002FB4BA /* testCalibrateUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = testCalibrateUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E961A44C1C937A60002FB4BA /* testCalibrateUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testCalibrateUITests.swift; sourceTree = "<group>"; };
 		E961A44E1C937A60002FB4BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E961A45E1C94D7AF002FB4BA /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		E961A4601C94D7C3002FB4BA /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		E961A4621C94D80D002FB4BA /* geigerGreen.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = geigerGreen.wav; path = testCalibrateTests/geigerGreen.wav; sourceTree = SOURCE_ROOT; };
+		E961A4661C94FA1F002FB4BA /* R2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = R2.mp3; sourceTree = "<group>"; };
+		E961A4681C94FC85002FB4BA /* geigerGreen.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = geigerGreen.mov; sourceTree = "<group>"; };
+		E961A46A1C94FD8A002FB4BA /* geigerGreen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = geigerGreen.mp3; sourceTree = "<group>"; };
+		E961A46C1C94FE12002FB4BA /* geigerOrange.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = geigerOrange.mp3; sourceTree = "<group>"; };
+		E961A46E1C950411002FB4BA /* geigerRed.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = geigerRed.mp3; sourceTree = "<group>"; };
+		E961A4701C960EF6002FB4BA /* digital-7 (mono italic).ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "digital-7 (mono italic).ttf"; sourceTree = "<group>"; };
+		E961A4721C961D62002FB4BA /* Rectangle 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Rectangle 1.png"; sourceTree = "<group>"; };
+		E961A4741C96288C002FB4BA /* magnet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = magnet.png; sourceTree = "<group>"; };
+		E961A4841C963E27002FB4BA /* Rectangle 1 + magIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Rectangle 1 + magIcon.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +78,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E961A4611C94D7C3002FB4BA /* CoreMotion.framework in Frameworks */,
+				E961A45F1C94D7AF002FB4BA /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +103,8 @@
 		E961A4201C937A60002FB4BA = {
 			isa = PBXGroup;
 			children = (
+				E961A4601C94D7C3002FB4BA /* CoreMotion.framework */,
+				E961A45E1C94D7AF002FB4BA /* AudioToolbox.framework */,
 				E961A42B1C937A60002FB4BA /* testCalibrate */,
 				E961A4401C937A60002FB4BA /* testCalibrateTests */,
 				E961A44B1C937A60002FB4BA /* testCalibrateUITests */,
@@ -103,6 +131,16 @@
 				E961A4331C937A60002FB4BA /* Assets.xcassets */,
 				E961A4351C937A60002FB4BA /* LaunchScreen.storyboard */,
 				E961A4381C937A60002FB4BA /* Info.plist */,
+				E961A4701C960EF6002FB4BA /* digital-7 (mono italic).ttf */,
+				E961A46E1C950411002FB4BA /* geigerRed.mp3 */,
+				E961A46C1C94FE12002FB4BA /* geigerOrange.mp3 */,
+				E961A46A1C94FD8A002FB4BA /* geigerGreen.mp3 */,
+				E961A4661C94FA1F002FB4BA /* R2.mp3 */,
+				E961A4621C94D80D002FB4BA /* geigerGreen.wav */,
+				E961A4681C94FC85002FB4BA /* geigerGreen.mov */,
+				E961A4721C961D62002FB4BA /* Rectangle 1.png */,
+				E961A4741C96288C002FB4BA /* magnet.png */,
+				E961A4841C963E27002FB4BA /* Rectangle 1 + magIcon.png */,
 			);
 			path = testCalibrate;
 			sourceTree = "<group>";
@@ -193,6 +231,7 @@
 				TargetAttributes = {
 					E961A4281C937A60002FB4BA = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = FGUJNZKHSN;
 					};
 					E961A43C1C937A60002FB4BA = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -230,8 +269,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				E961A4371C937A60002FB4BA /* LaunchScreen.storyboard in Resources */,
+				E961A4751C96288C002FB4BA /* magnet.png in Resources */,
+				E961A46B1C94FD8A002FB4BA /* geigerGreen.mp3 in Resources */,
+				E961A4731C961D62002FB4BA /* Rectangle 1.png in Resources */,
+				E961A46D1C94FE12002FB4BA /* geigerOrange.mp3 in Resources */,
 				E961A4341C937A60002FB4BA /* Assets.xcassets in Resources */,
+				E961A4711C960EF6002FB4BA /* digital-7 (mono italic).ttf in Resources */,
+				E961A4851C963E27002FB4BA /* Rectangle 1 + magIcon.png in Resources */,
 				E961A4321C937A60002FB4BA /* Main.storyboard in Resources */,
+				E961A46F1C950411002FB4BA /* geigerRed.mp3 in Resources */,
+				E961A4671C94FA1F002FB4BA /* R2.mp3 in Resources */,
+				E961A4691C94FC85002FB4BA /* geigerGreen.mov in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,6 +287,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E961A4631C94D80D002FB4BA /* geigerGreen.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,10 +446,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = testCalibrate/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.codingDojo.testCalibrate;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -408,10 +460,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = testCalibrate/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.codingDojo.testCalibrate;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
