@@ -62,7 +62,7 @@
                                     <constraint firstAttribute="width" constant="151" id="zr4-Hl-IJi"/>
                                 </constraints>
                             </imageView>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="-100" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="K2i-mj-jR0">
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="-150" maxValue="150" translatesAutoresizingMaskIntoConstraints="NO" id="K2i-mj-jR0">
                                 <rect key="frame" x="47" y="584" width="280" height="31"/>
                                 <color key="tintColor" red="1" green="0.79913514300326538" blue="0.27062549323392138" alpha="1" colorSpace="calibratedRGB"/>
                             </slider>
